@@ -1,0 +1,30 @@
+\documentclass[a4j,10pt,uplatex,dvipdfmx]{jsarticle}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,graphicx,booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{pxjahyper}
+\graphicspath{{images/}}
+\pagestyle{plain}
+
+\newcommand{\reportTitle}{研究進捗報告}
+\newcommand{\reportAuthor}{発表者名}
+\newcommand{\reportDate}{@@DATE@@}
+
+\begin{document}
+\begin{center}
+  {\Large\bfseries \reportTitle\par}
+  \vspace{2mm}
+  \reportDate\quad \reportAuthor
+\end{center}
+
+\section{はじめに}
+
+\section{取り組みと結果}
+
+\section{次回までの予定}
+
+% 文献は bib/*.bib.example を .bib にコピーして記入する（bib/README.md 参照）．
+% 引用するときは \cite{引用キー} を使い，次の2行を有効にする．
+% \bibliographystyle{junsrt}
+% \bibliography{bib/book,bib/website,bib/articles}
+\end{document}

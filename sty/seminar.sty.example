@@ -1,0 +1,34 @@
+% Optional seminar header/footer style. Copy to seminar.sty before use.
+\def\header{
+        \hspace{-7mm}
+        \raisebox{0mm}{
+        \makebox[165mm]{
+        \textbf{\@seminarTitle} \hspace*{\fill} \@seminarDate ~~~\@seminarPresenter}}
+        \hspace{-150mm}
+        \raisebox{-3mm}{
+                \makebox[165mm]{
+                                \hspace*{-3cm}\rule[2mm]{180mm}{0.05mm}}}}
+
+
+\def\footer{
+%        \hspace*{-3cm}\rule[2mm]{180mm}{0.01mm}
+%        \hspace{-150mm}
+        \raisebox{-3mm}{
+        \makebox[160mm]{\arabic{page}/\pageref{pagenum:lastpage}}}}
+
+\def\@oddhead{\header}
+\def\@evenhead{\header}
+\def\@oddfoot{\footer}
+\def\@evenfoot{\footer}
+
+\def\seminar#1#2{\@namedef{@seminar#1}{#2}}
+\seminar{Title}{}   
+\seminar{Date}{}
+\seminar{Presenter}{}         
+
+\let\@end@document\enddocument
+\def\enddocument{
+  {\label{pagenum:lastpage}}
+\@end@document}
+\endinput
+

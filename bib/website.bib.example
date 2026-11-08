@@ -1,0 +1,8 @@
+% 架空の記入例です。URL・閲覧日も実際の情報に置き換えてください。
+@misc{example_website,
+  author       = {組織名},
+  title        = {ウェブページタイトルの記入例},
+  howpublished = {\url{https://example.com/}},
+  year         = {2026},
+  note         = {2026年11月8日閲覧}
+}
